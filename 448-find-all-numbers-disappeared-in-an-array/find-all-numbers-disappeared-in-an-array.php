@@ -5,10 +5,9 @@ class Solution {
      * @return Integer[]
      */
     function findDisappearedNumbers($nums) {
-            $generateStringRange = implode(', ', range(1, count($nums)));
+    $generateStringRange = implode(', ', range(1, count($nums)));
     $newArray = explode(', ', $generateStringRange);
-    $difference = array_diff($newArray, $nums);
-    return $difference;
-        
-    }
+    return array_diff($newArray, $nums);
+    
+}
 }
