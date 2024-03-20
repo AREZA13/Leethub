@@ -15,8 +15,7 @@ class Solution extends VersionControl {
                 return $i;
             }
         }
-
-    return 1111;
+    throw new RuntimeException("Impossible");
     }
 
     function cutTheRange(int $minRange, int $maxRange): array
